@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.menu {
+    height: 75px;
+    background-color: #222222;
+}
+.footer__top {
+    height: 341px;
+    background-color: #222222;
+}
+.footer__mid {
+    height: 448px;
+    background-image: url(img/footer\ BG.png);
+}
+.footer__bot {
+    height: 79px;
+    background-color: #222224;
+    ;
+}
