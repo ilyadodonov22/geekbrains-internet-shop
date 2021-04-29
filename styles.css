@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    width: 100%;
+    height: 100%;
+}
 .container {
     width: 1140px;
     margin: auto;
@@ -36,6 +40,20 @@
 .navigation {
     width: 232px;
     float: right;
+    display: none;
+}
+.burger {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+.burger:hover {
+    border-bottom: 2px solid #F16D7F;
+}
+.active {
+    width: 232px;
+    float: right;
+    display: block;
 }
 .navigation__heading {
     padding: 37px 0 0 34px;
@@ -174,7 +192,6 @@
     line-height: 17px;
     color: #9F9F9F;
 }
-
 .products__cards {
     display: flex;
     justify-content: space-between;
@@ -183,6 +200,27 @@
 .card {
     width: 360px;
     padding-bottom: 30px;
+}
+.cardwithbutton {
+    width: 360px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.card__button {
+    width: 139px;
+    height: 44px;
+    top: 230px;
+    left: 110px;
+    position: absolute;
+    background: none;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    opacity: 0;
+}
+.cardwithbutton:hover .card__button  {
+    opacity: 1;
+    display: block;
 }
 .card__heading {
     padding-top: 25px;
@@ -333,7 +371,6 @@
     border-radius: 15px;
 }
 .footer__bot {
-
     height: 80px;
     background-color: #222224;
     display: flex;

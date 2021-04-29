@@ -24,12 +24,12 @@
                 <img class="header__img" src="img/loupe.svg" alt="loupe" width="26" height="26">
             </div>
             <div class="header__right">
-                <img src="img/burger.svg" alt="burger" width="32" height="29">
+                <button class="burger" onclick="openMenu()"><img src="img/burger.svg" alt=""></button>
                 <img src="img/man.svg" alt="man" width="29" height="29">
                 <img src="img/basket.svg" alt="basket" width="32" height="29">
             </div>
         </div>
-        <nav class="navigation">
+        <nav class="navigation" id="menu">
             <h2 class="navigation__heading">menu</h2>
             <ul>
                 <li class="nav__list">
@@ -115,8 +115,11 @@
                         up with Moda Operandi.</p>
                     <p class="card__price">$52.00</p>
                 </div>
-                <div class="card">
-                    <img src="img/card2.jpg" alt="c2" width="360" height="420">
+                <div class="cardwithbutton">
+                    <div class="button__hide">
+                        <img class="card2__image" src="img/card2.jpg" alt="c2" width="360" height="420">
+                        <button class="card__button">Add to cart</button>
+                    </div>
                     <h3 class="card__heading">ELLERY X M'O CAPSULE</h3>
                     <p class="card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
                         cool Kym Ellery
@@ -222,7 +225,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="menu.js"></script>
 </body>
 
 </html>

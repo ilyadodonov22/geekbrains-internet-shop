@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__left">
+            <img class="header__img" src="img/logo.svg" alt="logo" width="44" height="38">
+            <img class="header__img" src="img/loupe.svg" alt="loupe" width="26" height="26">
+        </div>
+        <div class="header__right">
+            <img src="img/burger.svg" alt="burger" width="32" height="29">
+            <img src="img/man.svg" alt="man" width="29" height="29">
+            <img src="img/basket.svg" alt="basket" width="32" height="29">
+        </div>
+        </div>
+    </header>
+    <div class="top-registration">
+        <h1 class="registration__heading">REGISTRATION</h1>
+    </div>
+    <section class="middle__container">
+        <form action="/" method="post">
+            <div class="form">
+                <div class="form__top">
+                    <label for="name">Your name</label>
+                    <input type="text" placeholder="First name" class="form__input">
+                    <input type="text" placeholder="Last name" class="form__input">
+                </div>
+                <div class="sex">
+                    <label class="sex__lable">
+                        <input type="radio" name="sex" value="мужской">male
+                        <div class="radio-control male"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="женский">female
+                        <div class="radio-control female"></div>
+                    </label>
+                </div>
+                <div class="form__bot">
+                    <label for="name">Login details</label>
+                    <input type="email" placeholder="Email" class="form__input">
+                    <input type="text" placeholder="Password" class="form__input">
+                    <p class="form__bot-text">Please use 8 or more characters, with at least 1 number and a mixture of
+                        uppercase and lowercase
+                        letters</p>
+                    <button class="form__button">JOIN NOW</button>
+                </div>
+            </div>
+        </form>
+        <div class="info">
+            <h2 class="info__heading">LOYALTY HAS ITS PERKS</h2>
+            <p class="info__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as soon as you join:</p>
+            <p class="info__text">15% off welcome offer
+            </p>
+            <p class="info__text">Free shipping, returns and exchanges on all orders
+            </p>
+            <p class="info__text">$10 off a purchase on your birthday
+            </p>
+            <p class="info__text">Early access to products</p>
+            <p class="info__text">Exclusive offers & rewards</p>
+        </div>
+    </section>
+    <footer>
+        <section class="footer__mid">
+            <div class="footer__container">
+                <div class="footer__mid-left">
+                    <img src="img/Intersect.png" alt="face" width="96" height="96">
+                    <p class="footer__mid-left-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum“</p>
+                </div>
+                <div class="footer__mid-right">
+                    <h3 class="footer__mid-heading">SUBSCRIBE</h3>
+                    <p class="footer__mid-text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <input class="footer__mid-input" type="text" name="" id="">
+                    <button class="footer__mid-button">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bot">
+            <div class="footer__container">
+                <p class="footer__bot-copy" style="color: white;">© 2021 Brand All Rights Reserved.</p>
+                <div>
+                    <img src="img/facebook.svg" alt="face" width="32" height="32">
+                    <img src="img/insta.svg" alt="insta" width="32" height="32">
+                    <img src="img/pinterest.svg" alt="pint" width="32" height="32">
+                    <img src="img/twitter.svg" alt="twitter" width="32" height="32">
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
