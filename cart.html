@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="registration.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,64 +30,59 @@
         </div>
     </header>
     <div class="top-registration">
-        <h1 class="registration__heading">REGISTRATION</h1>
+        <h1 class="registration__heading">SHOPPING CART</h1>
     </div>
-    <section class="middle__container">
-        <form action="/" method="post">
-            <div class="form">
-                <div class="form__top">
-                    <label for="name">Your name</label>
-                    <input type="text" placeholder="First name" class="form__input">
-                    <input type="text" placeholder="Last name" class="form__input">
+
+    <main class="container">
+        <section class="content">
+            <div class="carts">
+                <div class="cart">
+                    <img src="img/cart/cart1.png" alt="">
+                    <div class="cart__content">
+                        <h1 class="cart__heading">MANGO PEOPLE T-SHIRT</h1>
+                        <p class="cart__text">Price: <span style="color: #F16D7F;">$300</span> </p>
+                        <p class="cart__text">Color: Red</p>
+                        <p class="cart__text">Size: Xl </p>
+                        <p class="cart__text">Quantity: 2 </p>
+                    </div>
                 </div>
-                <div class="sex">
-                    <label class="sex__lable">
-                        <input type="radio" name="sex" value="мужской">male
-                        <div class="radio-control male"></div>
-                    </label>
-                    <label>
-                        <input type="radio" name="sex" value="женский">female
-                        <div class="radio-control female"></div>
-                    </label>
+                <div class="cart">
+                    <img src="img/cart/cart2.png" alt="">
+                    <div class="cart__content">
+                        <h1 class="cart__heading">MANGO PEOPLE T-SHIRT</h1>
+                        <p class="cart__text">Price: <span style="color: #F16D7F;">$300</span> </p>
+                        <p class="cart__text">Color: Red</p>
+                        <p class="cart__text">Size: Xl </p>
+                        <p class="cart__text">Quantity: 2 </p>
+                    </div>
                 </div>
-                <div class="form__bot">
-                    <label for="name">Login details</label>
-                    <input type="email" placeholder="Email" class="form__input">
-                    <input type="text" placeholder="Password" class="form__input">
-                    <p class="form__bot-text">Please use 8 or more characters, with at least 1 number and a mixture of
-                        uppercase and lowercase
-                        letters</p>
-                    <button class="form__button">JOIN NOW</button>
+                <div class="buttons">
+                    <a class="buttons__clear" href="#">CLEAR SHOPPING CART</a>
+                    <a class="buttons__continue" href="#">CONTINUE SHOPPING</a>
                 </div>
             </div>
-        </form>
-        <div class="info">
-            <h2 class="info__heading">LOYALTY HAS ITS PERKS</h2>
-            <div class="info__text">
-                <p>Get in on the loyalty program where you can earn points and unlock serious perks.
-                    Starting with these as soon as you join:</p>
-            </div>
-            <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
-                <p>15% off welcome offer</p>
-            </div>
-            <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
-                <p>Free shipping, returns and exchanges on all orders</p>
-            </div>
-            <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
-                <p>$10 off a purchase on your birthday</p>
-            </div>
-            <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
-                <p>Early access to products</p>
-            </div>
-            <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
-                <p>Exclusive offers & rewards</p>
-            </div>
-    </section>
+            <form action="/" method="post">
+                <div class="form">
+                    <div class="form__top">
+                        <label for="name">SHIPPING ADRESS</label>
+                        <input type="text" placeholder="Bangladesh" class="form__input">
+                        <input type="text" placeholder="State" class="form__input">
+                        <input type="text" placeholder="Postcode / Zip" class="form__input">
+                    </div>
+                    <div class="form__bot">
+                        <button class="form-button">GET A QUOTE</button>
+                    </div>
+                </div>
+                <div class="total">
+                    <p class="sub-text">SUB TOTAL $900</p>
+                    <p class="grand-text">GRAND TOTAL <span style="color: #F16D7F;">$900</span></p>
+                    <button class="total-button">PROCEED TO CHECKOUT</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
     <footer>
         <section class="footer__mid">
             <div class="footer__container">
@@ -116,6 +111,7 @@
             </div>
         </section>
     </footer>
+
 </body>
 
 </html>

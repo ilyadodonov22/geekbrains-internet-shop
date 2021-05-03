@@ -70,8 +70,6 @@ html, body {
 }
 .navigation__link {
     padding: 24px 0 0 34px;
-    font-family: Lato;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -94,6 +92,7 @@ html, body {
 
 .section__top {
     display: flex;
+    background-color: #F1E4E6;
 }
 .section__image {
     height: 100%;
@@ -205,6 +204,22 @@ html, body {
     width: 360px;
     padding-bottom: 30px;
     position: relative;
+}
+.button__hide {
+    position: relative;
+
+}
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    transition: 0.2s;
+}
+.shadow:hover {
+    background-color: rgba(0,0,0,0.5);
 }
 .card__button {
     width: 139px;
