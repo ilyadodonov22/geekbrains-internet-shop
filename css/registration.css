@@ -20,13 +20,32 @@ html, body {
     justify-content: space-between;
 }
 .header__img {
+    padding-right: 10px;
     height: 100%;
 }
+.main__button {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
 .header__left {
-    width: 111px;
+    width: 400px;
     padding: 18px 0 19px 231px;
     display: flex;
     justify-content: space-between;
+}
+.search {
+    padding-top: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.input__search {
+    border-radius: 0.5em;
+    border-style: solid;
+    border: 0.5px solid #000;
+    border-color: #1a1a1a;
+    outline: none;
 }
 .header__right {
     width: 169px;
@@ -34,6 +53,85 @@ html, body {
     display: flex;
     justify-content: space-between;
 }
+.registration__button {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+.registration__button:hover {
+    border-bottom: 2px solid #F16D7F;
+}
+.cart__button {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+.cart__button:hover {
+    border-bottom: 2px solid #F16D7F;
+}
+
+    /* navigation */
+
+    .navigation {
+        width: 232px;
+        float: right;
+        display: none;
+        background-color: white;
+    }
+    .burger {
+        background: none;
+        border-style: none;
+        cursor: pointer;
+    }
+    .burger:hover {
+        border-bottom: 2px solid #F16D7F;
+    }
+    .active {
+        width: 232px;
+        float: right;
+        display: block;
+    }
+    .navigation__heading {
+        padding: 37px 0 0 34px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;  
+        list-style: none;
+    }
+    .nav__list {
+        padding-top: 24px;
+        list-style: none;
+    }
+    .navigation__link {
+        padding: 24px 0 0 34px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-decoration: none;
+        list-style: none;
+    }
+    .links__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation__list {
+        padding: 12px 0 0 54px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        list-style: none;
+        text-decoration: none;
+    }
+    .navigation__list:hover {
+        color: #F16D7F;
+    } 
+    
 .top-registration {
     height: 148px;
     padding: 59px 0 0 230px;
@@ -46,129 +144,80 @@ html, body {
     line-height: 29px;
     color: #F16D7F;
 }
-.content {
-    padding-top: 100px;
+.middle__container {
+    width: 1140px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
-.cart {
-    margin-bottom: 40px;
-    width: 652px;
-    display: flex;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.cart__content {
-    padding: 22px 0 0 31px;
-}
-.cart__heading {
-    width: 200px;
-    padding-bottom: 42px;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    color: #222222;
-}
-.cart__text {
-    padding-top: 6px;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
-    color: #575757;
-}
-.buttons {
-    padding-top: 52px;
-    display: flex;
-    justify-content: space-between;
-}
-.buttons__clear {
-    padding: 16px 0;
-    width: 234px;
-    text-align: center;
-    border: 2px solid #A4A4A4;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-.buttons__continue {
-    padding: 16px 0;
-    width: 224px;
-    text-align: center;
-    border: 2px solid #A4A4A4;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-
 .form {
     margin-top: 64px;
     width: 360px;
     display: flex;
     flex-direction: column;
-
 }
 .form__input {
     height: 45px;
     padding-left: 10px;
     margin-top: 20px;
-    border: 2px solid #A4A4A4;
-    border-style: solid;
 }
 .form__top {
     display: flex;
     flex-direction: column;
+}
+.sex {
+    padding-top: 33px;
+    display: flex;
+}
+.sex__lable {
+    padding-right: 20px;
+}
+.form__bot {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.form__bot-text {
+    padding-top: 15px;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #222222;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
 }
-.form-button {
-    width: 100px;
-    margin-top: 24px;
-    padding: 10px 0;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
-    background: none;
-    border: 2px solid #A4A4A4;
-    border-style: solid;
-}
-.total {
-    margin-top: 58px;
-    width: 360px;
-    background: #F5F3F3;
-}
-.sub-text {
-    padding: 40px 0 0 218px;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
-}
-.grand-text {
-    padding: 12px 0 0 153px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #4A4A4A;
-
-}
-.total-button {
-    width: 290px;
-    padding: 15px 41px;
-    margin: 40px 35px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
+.form__button {
+    margin-top: 39px;
+    width: 167px;
+    height: 50px;
     background-color: #F16D7F;
     border-style: none;
+    color: white;
 }
-
+.form__button:hover {
+    border: 2px solid rgb(58, 197, 240);
+}
+.info {
+    width: 652px;
+    margin: 64px 0 0 128px;
+}
+.info__heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.info__text {
+    padding-top: 20px;
+    font-weight: 300px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    display: flex;
+}
+.info__img {
+    width: 25px;
+    height: 16px;
+    padding-right: 20px;
+}
 
 .footer__container {
     width: 1140px;
@@ -257,4 +306,5 @@ html, body {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+    text-decoration: none;
 }

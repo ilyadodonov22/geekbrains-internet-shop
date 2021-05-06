@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="css/registration.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,21 +17,68 @@
 
 <body>
 
-    <header class="header">
-        <div class="header__left">
-            <img class="header__img" src="img/logo.svg" alt="logo" width="44" height="38">
-            <img class="header__img" src="img/loupe.svg" alt="loupe" width="26" height="26">
+    <header>
+        <div class="header">
+            <div class="header__left">
+                <button class="main__button" type="button" onclick="document.location='index.html'"><img
+                        class="header__img" src="img/logo.svg" alt="logo" width="44" height="38"></button>
+                <div class="search">
+                    <img class="header__img" src="img/loupe.svg" alt="loupe" width="26" height="26">
+                    <input class="input__search" type="text" id="elastic">
+                </div>
+            </div>
+            <div class="header__right">
+                <button class="burger" onclick="openMenu()"><img src="img/burger.svg" alt=""></button>
+                <button class="registration__button" type="button" onclick="document.location='registration.html'"><img
+                        src="img/man.svg" alt="man" width="29" height="29"></button>
+                <button class="cart__button" onclick="document.location='cart.html'"><img src="img/basket.svg"
+                        alt="basket" width="32" height="29"></button>
+            </div>
         </div>
-        <div class="header__right">
-            <img src="img/burger.svg" alt="burger" width="32" height="29">
-            <img src="img/man.svg" alt="man" width="29" height="29">
-            <img src="img/basket.svg" alt="basket" width="32" height="29">
-        </div>
+        <nav class="navigation" id="menu">
+            <h2 class="navigation__heading">menu</h2>
+            <ul>
+                <li class="nav__list">
+                    <a class="navigation__link" href="#">man</a>
+                    <ul class="links__list">
+                        <a class="navigation__list" href="#">Accessories</a>
+                        <a class="navigation__list" href="#">Bags</a>
+                        <a class="navigation__list" href="#">Denim</a>
+                        <a class="navigation__list" href="#">T-Shirts</a>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav__list">
+                    <a class="navigation__link" href="#">woman</a>
+                    <ul class="links__list">
+                        <a class="navigation__list" href="#">Accessories</a>
+                        <a class="navigation__list" href="#">Jackets & Coats</a>
+                        <a class="navigation__list" href="#">Polos</a>
+                        <a class="navigation__list" href="#">T-Shirts</a>
+                        <a class="navigation__list" href="#">Shirts</a>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav__list">
+                    <a class="navigation__link" href="#">kids</a>
+                    <ul class="links__list">
+                        <a class="navigation__list" href="#">Accessories</a>
+                        <a class="navigation__list" href="#">Jackets & Coats</a>
+                        <a class="navigation__list" href="#">Polos</a>
+                        <a class="navigation__list" href="#">T-Shirts</a>
+                        <a class="navigation__list" href="#">Shirts</a>
+                        <a class="navigation__list" href="#">bags</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="top-registration">
+            <h1 class="registration__heading">REGISTRATION</h1>
         </div>
     </header>
-    <div class="top-registration">
-        <h1 class="registration__heading">REGISTRATION</h1>
-    </div>
+
     <section class="middle__container">
         <form action="/" method="post">
             <div class="form">
@@ -68,25 +115,26 @@
                     Starting with these as soon as you join:</p>
             </div>
             <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
+                <img class="info__img" src="img/V.png" alt="v">
                 <p>15% off welcome offer</p>
             </div>
             <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
+                <img class="info__img" src="img/V.png" alt="v">
                 <p>Free shipping, returns and exchanges on all orders</p>
             </div>
             <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
+                <img class="info__img" src="img/V.png" alt="v">
                 <p>$10 off a purchase on your birthday</p>
             </div>
             <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
+                <img class="info__img" src="img/V.png" alt="v">
                 <p>Early access to products</p>
             </div>
             <div class="info__text">
-                <img class="info__img" src="img/V.png" alt="">
+                <img class="info__img" src="img/V.png" alt="v">
                 <p>Exclusive offers & rewards</p>
             </div>
+        </div>
     </section>
     <footer>
         <section class="footer__mid">
@@ -106,7 +154,9 @@
         </section>
         <section class="footer__bot">
             <div class="footer__container">
-                <p class="footer__bot-copy" style="color: white;">© 2021 Brand All Rights Reserved.</p>
+                <div>
+                    <a href="#" class="footer__bot-copy">© 2021 Brand All Rights Reserved.</p>
+                </div>
                 <div>
                     <img src="img/facebook.svg" alt="face" width="32" height="32">
                     <img src="img/insta.svg" alt="insta" width="32" height="32">
@@ -116,6 +166,7 @@
             </div>
         </section>
     </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>
